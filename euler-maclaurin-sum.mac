@@ -1,0 +1,30 @@
+/* 
+   Copyright 2020 Yasuaki Honda
+   GPL version 2
+   Euler Maclaurin Summation Formula
+   euler-maclaurin-sum.mac
+
+   Documentation
+   Variable ems is bound to the definition of Euler Maclaurin Summation Formula.
+   The function f(x) and variables N, M, K appeared in ems can be assigned specific
+   function instance or values.
+   
+   See EulerMaclaurin.ipynb for details.
+*/
+
+texput(periodic_bernpoly,
+  lambda([arglist], block([vx,vn],[vx,vn]:args(arglist),
+      concat("\\overline{B}_{",tex1(vn) ,"}\\left(",tex1(vx), "\\right)"))))$
+
+texput(bern,
+  lambda([arglist],
+    concat("B_{",tex1(first(arglist)),"}")))$
+
+ems:
+  ev(sum(f(n),n,N,M)=term1+term2+term3,
+      term1=integrate(f(x),x,N,M)+f(M)/2+f(N)/2,
+      term2=sum((at(diff(f(x),x,k),[x=M])-at(diff(f(x),x,k),[x=N])) *
+            (-1)^(k+1)*bern(k+1)/(k+1)!,
+          k,1,K-1),
+      term3=(-1)^(K+1)/K!*integrate(periodic_bernpoly(x,K)*diff(f(x),x,K),x,N,M));
+      
