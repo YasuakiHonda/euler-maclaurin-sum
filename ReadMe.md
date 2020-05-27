@@ -22,26 +22,31 @@ This variable is assigned the mathematical definition of Euler Maclaurin Summati
 In **ems**, there are free variables **N**, **M**, and **K**. They can be assigned specific values separately.
 Also, the function **f(x)** appeared in ems can be given specific function definition.
 
+-----
 
 Function: **periodic_bernpoly(x,n)**
 
 This function is a place holder for the periodic Bernuli polinomial that appears in the Euler Maclaurin Summation Formula. However, the function is NOT given computable definition when loaded.
 
+-----
 
 Function: **def_php()**
 
 The function **def_php()** can be called to give computable definition of **periodic_bernpoly(x,n)** = bernpoly(x-floor(x)).
 
+-----
 
 Function: **undef_php()**
 
 The function **undef_php()** forgets the computable definition of **periodic_bernpoly(x,n)** so that it remains the place holder.
 
+-----
 
 defrule function: **emsRemInt**
 
 This defrule function can be used to transform the remainder term of Euler Maclaurin Summation Formula which is the integral of a fomula where **periodic_bernpoly(x,n)** is involved, into the sum of integral of a formula where only bernpoly(x,n) is involved. 
 
+-----
 
 ### Example
 Example use can be found in *euler-maclaurin-sum.ipynb* session file.
