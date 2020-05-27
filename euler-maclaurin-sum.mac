@@ -28,3 +28,9 @@ ems:
           k,1,K-1),
       term3=(-1)^(K+1)/K!*integrate(periodic_bernpoly(x,K)*diff(f(x),x,K),x,N,M));
       
+def_pbp():=[periodic_bernpoly(x,n):=bernpoly(x-floor(x),n)];
+undef_pbp():=kill(periodic_bernpoly);
+
+[matchdeclare(Func,lambda([FF],(FF=nounify(integrate))),[x,n,F,a,b],true), 
+defrule(emsRemInt,Func(periodic_bernpoly(x,n)*F,x,a,b),
+  sum(integrate(bernpoly(x-k,n)*F,x,k,k+1),k,a,b-1))];
