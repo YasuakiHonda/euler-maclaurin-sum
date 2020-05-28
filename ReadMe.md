@@ -50,3 +50,5 @@ This defrule function can be used to transform the remainder term of Euler Macla
 
 ### Example
 Example use can be found in *euler-maclaurin-sum.ipynb* session file.
+The file can be viewed by visiting the following link:
+https://nbviewer.jupyter.org/github/YasuakiHonda/euler-maclaurin-sum/blob/master/EulerMaclaurin.ipynb
