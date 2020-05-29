@@ -48,7 +48,12 @@ This defrule function can be used to transform the remainder term of Euler Macla
 
 -----
 
-### Example
-Example use can be found in *euler-maclaurin-sum.ipynb* session file.
+### Examples
+
+Example use of above API can be found in *How to use this package.ipynb* session file.
 The file can be viewed by visiting the following link:
-https://nbviewer.jupyter.org/github/YasuakiHonda/euler-maclaurin-sum/blob/master/EulerMaclaurin.ipynb
+https://nbviewer.jupyter.org/github/YasuakiHonda/euler-maclaurin-sum/blob/master/How%20to%20use%20this%20package.ipynb
+
+Application of calculation of Euler Mascheroni constant can be seen here:
+https://nbviewer.jupyter.org/github/YasuakiHonda/euler-maclaurin-sum/blob/master/Euler-Mascheroni.ipynb
+
