@@ -48,12 +48,18 @@ This defrule function can be used to transform the remainder term of Euler Macla
 
 -----
 
-### Examples
+### API Example
 
 Example use of above API can be found in *How to use this package.ipynb* session file.
 The file can be viewed by visiting the following link:
 https://nbviewer.jupyter.org/github/YasuakiHonda/euler-maclaurin-sum/blob/master/How%20to%20use%20this%20package.ipynb
 
-Application of calculation of Euler Mascheroni constant can be seen here:
+## Other Examples
+
 https://nbviewer.jupyter.org/github/YasuakiHonda/euler-maclaurin-sum/blob/master/Euler-Mascheroni.ipynb
 
+https://nbviewer.jupyter.org/github/YasuakiHonda/euler-maclaurin-sum/blob/master/Asymtotic-Aprox-of-Sum-Of-Sqrt-N.ipynb
+
+https://nbviewer.jupyter.org/github/YasuakiHonda/euler-maclaurin-sum/blob/master/Convergence%20of%20Integral%20involving%20Periodic%20Bernulli%20polinomial.ipynb
+
+https://nbviewer.jupyter.org/github/YasuakiHonda/euler-maclaurin-sum/blob/master/zeta-analytic-continuation.ipynb
