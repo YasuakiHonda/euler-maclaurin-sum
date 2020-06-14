@@ -54,7 +54,7 @@ Example use of above API can be found in *How to use this package.ipynb* session
 The file can be viewed by visiting the following link:
 https://nbviewer.jupyter.org/github/YasuakiHonda/euler-maclaurin-sum/blob/master/How%20to%20use%20this%20package.ipynb
 
-## Other Examples
+### Other Examples
 
 https://nbviewer.jupyter.org/github/YasuakiHonda/euler-maclaurin-sum/blob/master/Euler-Mascheroni.ipynb
 
